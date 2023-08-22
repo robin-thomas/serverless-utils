@@ -1,0 +1,37 @@
+{
+  "name": "@robinthomas/serverless-utils",
+  "version": "0.1.0",
+  "description": "General serverless utilities",
+  "author": "Robin Thomas <robinthomas2591@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "v20.x"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "serverless"
+  ],
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.5.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.2",
+    "prettier-eslint": "^15.0.1",
+    "prettier-eslint-cli": "^7.1.0",
+    "typescript": "^5.1.6"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css,json,md}": [
+      "prettier-eslint --write"
+    ]
+  },
+  "prettier": {
+    "printWidth": 120
+  }
+}

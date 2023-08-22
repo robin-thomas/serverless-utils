@@ -1,0 +1,13 @@
+.git
+.github
+.husky
+.nyc_output
+node_modules
+src
+tests
+.eslintignore
+.eslintrc.js
+.gitignore
+.prettierrc
+jest.config.js
+tsconfig.json
